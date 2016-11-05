@@ -1,5 +1,6 @@
 (function(){
-				function recieveNumber(){
+	addCheckSumToNumberArray();
+		function recieveNumber(){
 			var recievedNumber = prompt('Podaj liczbe:')
 			return recievedNumber
 		}
