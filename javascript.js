@@ -1,6 +1,5 @@
 (function(){
-multipliedNumberIntoArray(123);
-		function recieveNumber(){
+				function recieveNumber(){
 			var recievedNumber = prompt('Podaj liczbe:')
 			return recievedNumber
 		}
@@ -19,7 +18,7 @@ multipliedNumberIntoArray(123);
 				multiplyNumber(numberIntoArray()[numberPosition-1]);
 				isMultipliedNumberSmallerThanTen(multiplyNumber(numberIntoArray()[numberPosition-1]));
 			}else{
-				increaseNumbersSum()
+				increaseNumbersSum(numberIntoArray()[numberPosition-1])
 			}
 		}
 		function multiplyNumber(number){
@@ -28,7 +27,7 @@ multipliedNumberIntoArray(123);
 		}
 		function isMultipliedNumberSmallerThanTen(multipliedNumber){
 			if(multipliedNumber<10){
-				increaseNumbersSum()
+				increaseNumbersSum(multipliedNumber);
 			}
 			else{
 				multipliedNumbersDigitSum(multipliedNumber)
@@ -45,7 +44,8 @@ multipliedNumberIntoArray(123);
 			increaseNumbersSum(digitSum);
 		}
 		function increaseNumbersSum(increasingNumber){
-			finalSum =+ increasingNumber;
-			console.log(finalSum)
+		}
+		function countCheckSum(){
+
 		}
 })();
