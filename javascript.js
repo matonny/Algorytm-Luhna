@@ -44,8 +44,15 @@
 			increaseNumbersSum(digitSum);
 		}
 		function increaseNumbersSum(increasingNumber){
+			var finalSum =+ increasingNumber;
+			return finalSum;
 		}
 		function countCheckSum(){
-
+			checkSum = increaseNumbersSum()%10
+			return checkSum;
+		}
+		function addCheckSumToNumberArray(){
+			numberIntoArray().push(countCheckSum());
+			console.log(numberIntoArray());
 		}
 })();
